@@ -3,8 +3,8 @@ package mx.com.openpay.rs.application;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import mx.com.openpay.marvel.services.MarvelService;
-import mx.com.openpay.marvel.services.MarvelServiceImpl;
+import mx.com.openpay.marvel.app.MarvelApp;
+import mx.com.openpay.marvel.app.MarvelAppImpl;
 
 
 @Component
@@ -21,7 +21,7 @@ public class RsAppImpl implements RsApp{
 
     @Override
     public String getCharacters() {
-        MarvelService servicioMarvel = new MarvelServiceImpl(url);
+        MarvelApp servicioMarvel = new MarvelAppImpl(url,llavePublica,llavePrivada);
         return servicioMarvel.getCharacters();
     }
 
