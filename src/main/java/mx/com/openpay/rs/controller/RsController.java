@@ -16,7 +16,7 @@ public class RsController {
 
     @GetMapping("/characters")
     public String getCharacters() {
-        String respuesta = rsApp.getMensaje("Diego");
+        String respuesta = rsApp.getCharacters();
         return respuesta;
     }
 

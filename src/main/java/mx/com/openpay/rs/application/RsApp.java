@@ -3,8 +3,7 @@ package mx.com.openpay.rs.application;
 public interface RsApp {
     /**
      * Método de la interfaz para el consumo del JAR
-     * @param mensaje de entrada
-     * @return String de salida
+     * @return String de todos los caracteres de Marvel
      */
-    public String getMensaje(String mensaje);
+    public String getCharacters();
 }
